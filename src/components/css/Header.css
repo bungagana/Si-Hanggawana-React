@@ -1,0 +1,46 @@
+
+header {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    color: #282c34; /* Warna teks gelap */
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 40px; /* Menyesuaikan ukuran logo */
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #282c34; /* Warna teks gelap */
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    color: #282c34; /* Warna ikon pencarian gelap */
+    cursor: pointer;
+  }
+  

@@ -1,27 +1,12 @@
 import React from 'react';
-import { FaWhatsapp, FaSearch } from 'react-icons/fa';
-import logo from './images/logosi.png';
-import './css/LandingPage.css'; // Pastikan path CSS sesuai
+import Header from './Header'; // Import the Header component
+import { FaWhatsapp } from 'react-icons/fa';
+import './css/LandingPage.css'; // Path to your CSS file
 
 function LandingPage() {
   return (
     <>
-      <header>
-        <div className="logo">
-        <img src={logo}/>   Hanggawana
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#katalog">Katalog</a></li>
-            <li><a href="#konsultan">Konsultan</a></li>
-            <li><a href="#pelatihan">Pelatihan</a></li>
-            <li><a href="#outingclass">Outing Class</a></li>
-            <li><a href="#tentangkita">Tentang Kita</a></li>
-          </ul>
-        </nav>
-        <FaSearch className="search-icon" />
-      </header>
+      <Header /> {/* Use the Header component here */}
       
       <section id="home" className="hero-section">
         <div className="hero-overlay"></div>

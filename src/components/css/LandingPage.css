@@ -1,0 +1,301 @@
+/* Navbar */
+
+header {
+    background-color: #ffffff; /* Warna latar belakang putih */
+    color: #282c34; /* Warna teks gelap */
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header .logo {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 40px; /* Menyesuaikan ukuran logo */
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: #282c34; /* Warna teks gelap */
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .search-icon {
+    font-size: 20px;
+    color: #282c34; /* Warna ikon pencarian gelap */
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+/* Hero Section */
+.hero-content p {
+    font-size: 1.2rem; /* Menyesuaikan ukuran font */
+    margin: 10px 0;
+    text-align: center; /* Teks rata tengah */
+    line-height: 1.4; /* Jarak antar baris */
+    max-width: 800px; /* Lebar maksimum untuk teks terbungkus */
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+/* Tambahkan jarak antara tombol dan teks deskripsi */
+.cta-button {
+    padding: 10px 20px;
+    margin: 20px 10px; /* Tambahkan jarak vertikal di sini */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+  .cta-button.transparent {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  .cta-button.primary {
+    background-color: #007bff;
+  }
+  
+  .cta-button.whatsapp {
+    background-color: #25D366;
+  }
+  /* Sections */
+/* Sections */
+.section {
+    padding: 40px 20px;
+    
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFAC34; /* Warna kuning untuk "VISI MISI" */
+  }
+  
+  .highlight {
+    color: #000000; /* Warna hitam untuk "SI HANGGAWANA" */
+    font-weight: bold; /* Membuat "SI HANGGAWANA" lebih menonjol */
+  }
+  
+  .two-column {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .column img {
+    max-width: 100%;
+  }
+  
+  .column p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Memodifikasi gaya untuk bagian "Visi & Misi" */
+  .column h3 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .column p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+
+  .column img {
+    max-width: 100%; /* Menyesuaikan gambar dengan lebar kolom */
+  }
+  
+
+  /* Kategori Produk */
+#katalog .two-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 30px; /* Jarak antar kartu */
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .partners-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .partners-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #FFAC34; /* Warna kuning untuk judul */
+  }
+  
+  .partners-logos {
+    display: flex;
+    flex-wrap: wrap; /* Membuat gambar berpindah ke baris baru jika diperlukan */
+    justify-content: center; /* Mengatur gambar di tengah */
+    gap: 20px; /* Jarak antara gambar */
+  }
+  
+  .partners-logos img {
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    width: 100px; /* Ukuran tetap untuk gambar */
+    height: 100px; /* Ukuran tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+    border: 2px solid #ddd; /* Memberikan border tipis */
+  }
+  
+  .footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  #tentangkita .column h3 {
+    display: flex;
+    flex-direction: row; /* Mengatur teks dalam satu baris */
+    align-items: center; /* Vertikal tengah */
+    font-size: 2.2rem; /* Ukuran font judul */
+  }
+  
+  #tentangkita .column h3 span {
+    margin-right: 10px; /* Jarak antara teks */
+  }
+  
+  #tentangkita .column h3 span:first-of-type {
+    color: #000000; /* Warna hitam untuk "APA ITU" */
+  }
+  
+  #tentangkita .column h3 span:nth-of-type(2) {
+    color: #FFAC34; /* Warna #FFAC34 untuk "SI HANGGAWANA" */
+  }
+  
+  /* Tambahkan jarak antara tombol dan teks deskripsi */
+  .cta-button {
+    padding: 10px 20px;
+    margin: 20px 10px; /* Tambahkan jarak vertikal di sini */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .cta-button.transparent {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  .cta-button.primary {
+    background-color: #007bff;
+  }
+  
+  .cta-button.whatsapp {
+    background-color: #25D366;
+  }
+  
+  /* Menggunakan gaya yang sama seperti hero section */
+  .about-description p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 1.6; /* Jarak antar baris */
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Padding di samping untuk menghindari teks yang terlalu dekat dengan tepi */
+    padding-bottom: 40px;
+  }
+  

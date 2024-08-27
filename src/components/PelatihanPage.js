@@ -21,9 +21,9 @@ const PelatihanPage = () => {
 
   // Sample training products
   const trainingProducts = [
-    { id: 1, name: 'Pelatihan Bisnis', description: 'Pelatihan untuk pengembangan bisnis.', image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Pelatihan Kewirausahaan', description: 'Pelatihan untuk kewirausahaan.', image: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Pelatihan Manajemen', description: 'Pelatihan manajemen untuk bisnis.', image: 'https://via.placeholder.com/150' },
+    { id: 1, name: 'Pelatihan Bisnis', description: 'Pelatihan untuk pengembangan bisnis.', image: 'https://th.bing.com/th/id/OIP.GxeGnt5wzYMw04qXCDmHuQHaFj?w=243&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7' },
+    { id: 2, name: 'Pelatihan Kewirausahaan', description: 'Pelatihan untuk kewirausahaan.', image: 'https://dinkopukmperin.surakarta.go.id/web/wp-content/uploads/2023/01/PELATIHAN-KEWIRAUSAHAAN-2023-1.png' },
+    { id: 3, name: 'Pelatihan Manajemen', description: 'Pelatihan manajemen untuk bisnis.', image: 'https://pelatihansoftskill.com/wp-content/uploads/2020/09/pelatihan-bisnis-1.jpg' },
   ];
 
   const handleOrderClick = (e, productId) => {

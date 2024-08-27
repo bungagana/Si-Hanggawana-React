@@ -9,15 +9,11 @@ const ProductDetailPage = () => {
 
   // Sample products data, you might fetch this from an API in a real application
   const products = [
-    { id: 1, category: 'buah', name: 'Apel Merah', description: 'Apel merah segar langsung dari kebun.', image: 'https://via.placeholder.com/150' },
-    { id: 2, category: 'buah', name: 'Jeruk Manis', description: 'Jeruk manis kaya akan vitamin C.', image: 'https://via.placeholder.com/150' },
-    { id: 3, category: 'buah', name: 'Anggur Ungu', description: 'Anggur ungu segar untuk cemilan sehat.', image: 'https://via.placeholder.com/150' },
-    { id: 4, category: 'sayur', name: 'Bayam Segar', description: 'Bayam hijau penuh nutrisi.', image: 'https://via.placeholder.com/150' },
-    { id: 5, category: 'sayur', name: 'Wortel Organik', description: 'Wortel organik untuk kesehatan mata.', image: 'https://via.placeholder.com/150' },
-    { id: 6, category: 'sayur', name: 'Sawi Hijau', description: 'Sawi hijau segar dari kebun lokal.', image: 'https://via.placeholder.com/150' },
-    { id: 7, category: 'tanamanpangan', name: 'Padi Organik', description: 'Padi organik untuk hasil panen berkualitas.', image: 'https://via.placeholder.com/150' },
-    { id: 8, category: 'tanamanpangan', name: 'Jagung Manis', description: 'Jagung manis siap tanam.', image: 'https://via.placeholder.com/150' },
-    { id: 9, category: 'tanamanpangan', name: 'Kacang Hijau', description: 'Kacang hijau untuk berbagai masakan.', image: 'https://via.placeholder.com/150' }
+    { id: 1, category: 'buah', name: 'Apel Merah', description: 'Apel merah segar langsung dari kebun.', image: 'https://cdn.pixabay.com/photo/2016/07/09/12/16/apples-1506119_1280.jpg' },
+    { id: 2, category: 'buah', name: 'Jeruk Manis', description: 'Jeruk manis kaya akan vitamin C.', image: 'https://cdn.pixabay.com/photo/2014/08/01/08/31/oranges-407429_1280.jpg' },
+    { id: 4, category: 'sayur', name: 'Melon Kuning', description: 'Melon Kuning penuh nutrisi.', image: 'https://cdn.pixabay.com/photo/2016/03/05/22/30/food-1239301_1280.jpg' },
+    { id: 7, category: 'tanamanpangan', name: 'Padi Organik', description: 'Padi organik untuk hasil panen berkualitas.', image: 'https://cdn.pixabay.com/photo/2015/01/03/16/53/rice-and-corn-587593_1280.jpg' },
+
   ];
 
   const product = products.find(p => p.id === parseInt(id));
@@ -39,7 +35,7 @@ const ProductDetailPage = () => {
         )}
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

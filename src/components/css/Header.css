@@ -1,4 +1,3 @@
-
 header {
     background-color: #ffffff; /* Warna latar belakang putih */
     color: #282c34; /* Warna teks gelap */
@@ -6,6 +5,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Membantu dalam responsivitas */
   }
   
   header .logo {
@@ -22,25 +22,87 @@ header {
   
   nav ul {
     display: flex;
-    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Membantu dalam responsivitas */
+    gap: 10px; /* Jarak antar item navigasi */
   }
   
   nav li {
-    margin: 0 15px;
+    margin: 0;
   }
   
   nav a {
     color: #282c34; /* Warna teks gelap */
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease; /* Transition untuk perubahan warna */
+  }
+  
+  nav a.active {
+    color: #f1c40f; /* Warna kuning untuk link aktif */
+    font-weight: bold; /* Menyoroti tautan aktif */
+  }
+  
+  nav a:hover {
+    color: #3498db; /* Warna biru saat hover */
   }
   
   .search-icon {
     font-size: 20px;
     color: #282c34; /* Warna ikon pencarian gelap */
     cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablet Portrait and Up */
+  @media (max-width: 768px) {
+    header {
+      padding: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .logo {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav li {
+      margin: 5px 0;
+    }
+  
+    .search-icon {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    header {
+      padding: 10px;
+    }
+  
+    header .logo img {
+      height: 30px;
+      margin-right: 5px;
+    }
+  
+    nav ul {
+      display: none; /* Hide navigation menu on mobile */
+    }
+  
+    .search-icon {
+      font-size: 18px;
+      margin-top: 10px;
+    }
   }
   

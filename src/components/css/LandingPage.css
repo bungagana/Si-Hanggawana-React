@@ -1,12 +1,18 @@
-/* Navbar */
-
-header {
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  header {
     background-color: #ffffff; /* Warna latar belakang putih */
     color: #282c34; /* Warna teks gelap */
     padding: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
   
   header .logo {
@@ -76,8 +82,7 @@ header {
     font-size: 2rem;
   }
   
-/* Hero Section */
-.hero-content p {
+  .hero-content p {
     font-size: 1rem; /* Menyesuaikan ukuran font */
     margin: 10px 0;
     text-align: center; /* Teks rata tengah */
@@ -86,10 +91,9 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 40px;
-}
-
-/* Tambahkan jarak antara tombol dan teks deskripsi */
-.cta-button {
+  }
+  
+  .cta-button {
     padding: 10px 20px;
     margin: 20px 10px; /* Tambahkan jarak vertikal di sini */
     border: none;
@@ -98,8 +102,8 @@ header {
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
-}
-
+  }
+  
   .cta-button.transparent {
     background-color: transparent;
     border: 2px solid white;
@@ -112,11 +116,10 @@ header {
   .cta-button.whatsapp {
     background-color: #25D366;
   }
+  
   /* Sections */
-/* Sections */
-.section {
+  .section {
     padding: 40px 20px;
-    
   }
   
   .section-title {
@@ -163,57 +166,89 @@ header {
     font-size: 1rem;
   }
   
-
-  .column img {
-    max-width: 100%; /* Menyesuaikan gambar dengan lebar kolom */
-  }
-  
-
-  /* Kategori Produk */
-/* Kategori Produk */
+ /* Kategori Produk */
 #katalog .two-column {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* Reduced space between cards */
-}
-
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di desktop */
+    gap: 20px; /* Jarak antar kartu produk yang lebih besar */
+  }
   
   .product-card {
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding-bottom:24px;
+    border-radius: 12px; /* Sudut lebih bulat */
+    padding: 20px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9; /* Warna latar belakang yang lebih terang */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan ringan */
+    max-width: 300px; /* Lebar maksimum kartu */
+    margin: 0 auto; /* Pusatkan kartu secara horizontal */
   }
   
   .product-card img {
     max-width: 100%;
+    height: auto; /* Mempertahankan rasio aspek */
     border-radius: 8px;
   }
   
   .product-card h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
+    margin: 15px 0;
+    font-size: 1.25rem; /* Ukuran font yang lebih besar */
   }
   
   .product-card p {
-    font-size: 1rem;
+    font-size: 0.875rem; /* Ukuran font deskripsi */
     color: #555;
   }
   
   .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Membesarkan kartu saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih gelap saat hover */
   }
   
+  /* Responsive Styles */
   
-/* Add margin-bottom to partners-section */
-.partners-section {
+  /* Tablet Portrait */
+  @media (max-width: 768px) {
+    #katalog .two-column {
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+      gap: 20px; /* Jarak antar kartu produk */
+    }
+  
+    .product-card {
+      padding: 16px;
+      max-width: 250px; /* Ukuran maksimum kartu untuk tablet */
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    #katalog .two-column {
+      grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+      gap: 15px; /* Jarak antar kartu produk */
+    }
+  
+    .product-card {
+      padding: 12px;
+      max-width: 100%; /* Kartu produk menggunakan lebar penuh */
+    }
+  
+    .product-card h3 {
+      font-size: 1rem; /* Ukuran font untuk judul di mobile */
+    }
+  
+    .product-card p {
+      font-size: 0.75rem; /* Ukuran font deskripsi di mobile */
+    }
+  }
+  
+  /* Mitra Kami */
+  .partners-section {
     text-align: center;
     padding: 40px 20px;
     margin-bottom: 120px; /* Ensure enough space for the footer */
-}
+  }
   
   .partners-section h2 {
     font-size: 2rem;
@@ -236,6 +271,7 @@ header {
     border: 2px solid #ddd; /* Memberikan border tipis */
   }
   
+  /* Footer */
   .footer {
     background-color: #282c34;
     color: white;
@@ -246,6 +282,7 @@ header {
     bottom: 0;
   }
   
+  /* Section Tentang Kita */
   #tentangkita .column h3 {
     display: flex;
     flex-direction: row; /* Mengatur teks dalam satu baris */
@@ -265,46 +302,128 @@ header {
     color: #FFAC34; /* Warna #FFAC34 untuk "SI HANGGAWANA" */
   }
   
-  /* Tambahkan jarak antara tombol dan teks deskripsi */
-  .cta-button {
-    padding: 10px 20px;
-    margin: 20px 10px; /* Tambahkan jarak vertikal di sini */
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
+  /* Responsive Styles */
+  
+  /* Tablet Portrait */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    .hero-section {
+      padding: 80px 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .two-column {
+      flex-direction: column;
+    }
+  
+    .column {
+      margin-bottom: 20px;
+    }
+  
+    #katalog .two-column {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-card {
+      padding: 16px;
+    }
+  
+    .partners-logos img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .footer {
+      font-size: 0.9rem;
+      padding: 10px 5px;
+    }
   }
   
-  .cta-button.transparent {
-    background-color: transparent;
-    border: 2px solid white;
-  }
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    header {
+      padding: 15px;
+    }
   
-  .cta-button.primary {
-    background-color: #007bff;
-  }
+    .logo img {
+      height: 30px;
+      margin-right: 5px;
+    }
   
-  .cta-button.whatsapp {
-    background-color: #25D366;
-  }
+    nav ul {
+      display: none; /* Hide navigation for mobile */
+    }
   
-  /* Menggunakan gaya yang sama seperti hero section */
-  .about-description p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    text-align: center;
-    line-height: 1.6; /* Jarak antar baris */
-    max-width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px; /* Padding di samping untuk menghindari teks yang terlalu dekat dengan tepi */
-    padding-bottom: 40px;
-  }
-  nav a.active {
-    color: #FFAC34; /* Warna kuning untuk item aktif */
-    font-weight: bold; /* Opsional: membuat item aktif lebih menonjol */
-  }
+    .search-icon {
+      font-size: 18px;
+    }
   
+    .hero-section {
+      padding: 60px 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.25rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.85rem;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .two-column {
+      flex-direction: column;
+    }
+  
+    .column {
+      margin-bottom: 15px;
+    }
+  
+    #katalog .two-column {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-card {
+      padding: 12px;
+    }
+  
+    .partners-logos img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .footer {
+      font-size: 0.8rem;
+      padding: 10px 5px;
+    }
+  }
   

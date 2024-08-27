@@ -1,49 +1,27 @@
-.konsultan-detail-container {
-    max-width: 800px;
-    margin: 0 auto;
+.consultant-detail-container {
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.konsultan-detail-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-}
-
-.konsultan-detail-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.konsultan-detail-image {
+  }
+  
+  .consultant-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .consultant-detail-image {
     max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.konsultan-detail-description {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.contact-button {
+    height: auto;
+  }
+  
+  .consultant-description {
+    margin: 20px 0;
+  }
+  
+  .contact-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 4px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-    background-color: #0056b3;
-}
+    border-radius: 5px;
+  }
+  

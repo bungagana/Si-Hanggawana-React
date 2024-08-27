@@ -9,8 +9,8 @@ body {
     flex-direction: column;
 }
 
-/* Ensure the konsultan-container can grow */
-.konsultan-container {
+/* Ensure the katalog-container can grow */
+.katalog-container {
     flex: 1;
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ body {
 }
 
 /* Title styles */
-.konsultan-title {
+.katalog-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
@@ -29,35 +29,14 @@ body {
 }
 
 /* Description styles */
-.konsultan-description {
+.katalog-description {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 30px;
     color: #666;
 }
 
-/* Search bar container */
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-/* Input field styles */
-.search-bar input[type="text"] {
-    width: 60%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    transition: border-color 0.3s ease;
-}
-
-.search-bar input[type="text"]:focus {
-    border-color: #007bff;
-}
+/* Remove search bar and filter styling since it's not used anymore */
 
 /* Product cards container */
 .product-cards {
@@ -71,11 +50,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    text-decoration: none; /* Ensure no underline */
+    text-decoration: none;
 }
 
 .product-card {
-    display: block; /* This ensures the card takes up full width */
+    display: block;
 }
 
 /* Product image */
@@ -90,7 +69,7 @@ body {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333;
-    text-decoration: none; /* Ensure no underline */
+    text-decoration: none;
 }
 
 /* Product description */

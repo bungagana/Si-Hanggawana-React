@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import './css/KatalogPage.css';
 
 function KatalogPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('buah');
+  const [selectedCategory, setSelectedCategory] = useState('all');
 
   const products = [
     { id: 1, category: 'buah', name: 'Apel Merah', description: 'Apel merah segar langsung dari kebun.', image: 'https://via.placeholder.com/150' },
@@ -20,9 +21,14 @@ function KatalogPage() {
   ];
 
   const filteredProducts = products.filter(product =>
-    product.category === selectedCategory &&
+    (selectedCategory === 'all' || product.category === selectedCategory) &&
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleOrderClick = (e, productId) => {
+    e.stopPropagation();
+    window.open(`https://wa.me/yourwhatsappnumber?text=Hello, I am interested in product ${productId}`, '_blank');
+  };
 
   return (
     <>
@@ -30,7 +36,7 @@ function KatalogPage() {
 
       <div className="katalog-container">
         <h1 className="katalog-title">Cari Dengan Mudah</h1>
-        <p className="katalog-description">Cukup dengan satu langkah, temukan buah yang kalian inginkan.</p>
+        <p className="katalog-description">Cukup dengan satu langkah, temukan produk yang kalian inginkan.</p>
 
         <div className="search-bar">
           <input
@@ -43,6 +49,7 @@ function KatalogPage() {
             value={selectedCategory}
             onChange={e => setSelectedCategory(e.target.value)}
           >
+            <option value="all">Semua</option>
             <option value="buah">Buah</option>
             <option value="sayur">Sayur</option>
             <option value="tanamanpangan">Tanaman Pangan</option>
@@ -52,12 +59,14 @@ function KatalogPage() {
         <div className="product-cards">
           {filteredProducts.length > 0 ? (
             filteredProducts.map(product => (
-              <div className="product-card" key={product.id}>
-                <img src={product.image} alt={product.name} />
-                <h3>{product.name}</h3>
-                <p>{product.description}</p>
-                <a href="https://wa.me/yourwhatsappnumber" className="order-button">Pesan</a>
-              </div>
+              <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
+                <div className="product-card">
+                  <img src={product.image} alt={product.name} />
+                  <h3>{product.name}</h3>
+                  <p>{product.description}</p>
+                  <a href="#" className="order-button" onClick={(e) => handleOrderClick(e, product.id)}>Pesan</a>
+                </div>
+              </Link>
             ))
           ) : (
             <p>No products found</p>
@@ -65,7 +74,7 @@ function KatalogPage() {
         </div>
       </div>
 
-
+      <Footer />
     </>
   );
 }

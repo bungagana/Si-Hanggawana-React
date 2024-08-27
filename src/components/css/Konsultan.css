@@ -9,9 +9,9 @@ body {
     flex-direction: column;
 }
 
-/* Ensure the katalog-container can grow */
-.katalog-container {
-    flex: 1; /* allows the container to grow and push the footer down */
+/* Ensure the konsultan-container can grow */
+.konsultan-container {
+    flex: 1;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -21,7 +21,7 @@ body {
 }
 
 /* Title styles */
-.katalog-title {
+.konsultan-title {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
@@ -29,7 +29,7 @@ body {
 }
 
 /* Description styles */
-.katalog-description {
+.konsultan-description {
     font-size: 1.2rem;
     text-align: center;
     margin-bottom: 30px;
@@ -56,19 +56,6 @@ body {
 }
 
 .search-bar input[type="text"]:focus {
-    border-color: #007bff;
-}
-
-/* Select dropdown styles */
-.search-bar select {
-    padding: 10px;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-.search-bar select:focus {
     border-color: #007bff;
 }
 

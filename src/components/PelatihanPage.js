@@ -10,6 +10,13 @@ const PelatihanPage = () => {
     'https://innovillage.id/storage/article_thumbnails/min_article_thumbnails_5b9813fd1ac85abbc3f2d0a6f886b519.jpeg',
     'https://i.ytimg.com/vi/PSGQQAPgCs4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhGMA8=&rs=AOn4CLC4led97-JD641sPtuaMO3Ecc16kg',
     'https://innovillage.id/storage/article_thumbnails/article_thumbnails_52b226cc2ba41aa641fb772141d97843.PNG',
+    'https://innovillage.id/storage/article_thumbnails/min_article_thumbnails_5b9813fd1ac85abbc3f2d0a6f886b519.jpeg',
+    'https://i.ytimg.com/vi/PSGQQAPgCs4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhGMA8=&rs=AOn4CLC4led97-JD641sPtuaMO3Ecc16kg',
+    'https://innovillage.id/storage/article_thumbnails/article_thumbnails_52b226cc2ba41aa641fb772141d97843.PNG',
+    'https://innovillage.id/storage/article_thumbnails/min_article_thumbnails_5b9813fd1ac85abbc3f2d0a6f886b519.jpeg',
+    'https://i.ytimg.com/vi/PSGQQAPgCs4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhGMA8=&rs=AOn4CLC4led97-JD641sPtuaMO3Ecc16kg',
+    'https://innovillage.id/storage/article_thumbnails/article_thumbnails_52b226cc2ba41aa641fb772141d97843.PNG',
+    'https://innovillage.id/storage/article_thumbnails/article_thumbnails_52b226cc2ba41aa641fb772141d97843.PNG',
   ];
 
   // Sample training products

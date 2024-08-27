@@ -1,0 +1,47 @@
+/* css/OutingClassPage.css */
+
+.outingclass-container {
+    padding: 20px;
+}
+
+.outingclass-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px; /* Space between gallery and 360 view */
+}
+
+.gallery-image {
+    width: 200px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.camera-title {
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 2px solid #ddd; /* Add a border line for separation */
+    padding-top: 20px; /* Add padding to avoid content being too close to the line */
+}
+
+.camera-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between iframes */
+    justify-content: center;
+}
+
+.camera-view {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your design */
+    height: 400px; /* Adjust height as needed */
+    border: none;
+}

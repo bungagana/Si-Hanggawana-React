@@ -1,3 +1,5 @@
+// App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/Landingpage';
@@ -5,7 +7,8 @@ import KatalogPage from './components/KatalogPage';
 import ProductDetailPage from './components/ProductDetailPage';
 import KonsultanPage from './components/ConsultanPage';
 import KonsultanDetailPage from './components/ConsultanDetailPage';
-import PelatihanPage from './components/PelatihanPage'; // Import the new page
+import PelatihanPage from './components/PelatihanPage'; 
+import OutingClassPage from './components/OutingClassPage'; // Import the new page
 
 function App() {
   return (
@@ -16,7 +19,8 @@ function App() {
         <Route path="/product/:id" element={<ProductDetailPage />} />
         <Route path="/konsultan" element={<KonsultanPage />} />
         <Route path="/konsultan/:id" element={<KonsultanDetailPage />} />
-        <Route path="/pelatihan" element={<PelatihanPage />} /> {/* Add the new route */}
+        <Route path="/pelatihan" element={<PelatihanPage />} />
+        <Route path="/outingclass" element={<OutingClassPage />} /> {/* Add the new route */}
       </Routes>
     </Router>
   );

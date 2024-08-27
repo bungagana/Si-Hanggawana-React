@@ -1,13 +1,28 @@
 import React from 'react';
-import Header from './Header'; // Import the Header component
-import { FaWhatsapp } from 'react-icons/fa';
-import './css/LandingPage.css'; // Path to your CSS file
+import { FaWhatsapp, FaSearch } from 'react-icons/fa';
+import logo from './images/logosi.png';
+import './css/LandingPage.css'; // Pastikan path CSS sesuai
 
 function LandingPage() {
   return (
     <>
-      <Header /> {/* Use the Header component here */}
-      
+      <header>
+        <div className="logo">
+        <img src={logo}/>   Hanggawana
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#katalog">Katalog</a></li>
+            <li><a href="#konsultan">Konsultan</a></li>
+            <li><a href="#pelatihan">Pelatihan</a></li>
+            <li><a href="#outingclass">Outing Class</a></li>
+            <li><a href="#tentangkita">Tentang Kita</a></li>
+          </ul>
+        </nav>
+        <FaSearch className="search-icon" />
+      </header>
+
       <section id="home" className="hero-section">
         <div className="hero-overlay"></div>
         <div className="hero-content">
@@ -17,7 +32,7 @@ function LandingPage() {
           <a href="https://wa.me/yourwhatsappnumber" className="cta-button whatsapp"><FaWhatsapp /> Hubungi</a>
         </div>
       </section>
-      
+
       <section id="tentangkita" className="section">
   <div className="two-column">
     <div className="column">
@@ -36,7 +51,7 @@ function LandingPage() {
 </section>
 
 
-      
+
 <section className="section">
   <h2 className="section-title">
     VISI MISI <span className="highlight">SI HANGGAWANA</span>
@@ -95,7 +110,7 @@ function LandingPage() {
 </section>
 
 
-      
+
 <section id="mitra" className="partners-section">
   <h2>Mitra Kami</h2>
   <div className="partners-logos">
@@ -108,7 +123,7 @@ function LandingPage() {
   </div>
 </section>
 
-      
+
       <footer className="footer">
         <p>&copy; 2024 P4S Satria Tani Hanggwana. All rights reserved.</p>
       </footer>

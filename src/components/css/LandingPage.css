@@ -78,7 +78,7 @@ header {
   
 /* Hero Section */
 .hero-content p {
-    font-size: 1.2rem; /* Menyesuaikan ukuran font */
+    font-size: 1rem; /* Menyesuaikan ukuran font */
     margin: 10px 0;
     text-align: center; /* Teks rata tengah */
     line-height: 1.4; /* Jarak antar baris */
@@ -120,9 +120,9 @@ header {
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     color: #FFAC34; /* Warna kuning untuk "VISI MISI" */
   }
   
@@ -134,7 +134,7 @@ header {
   .two-column {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   .column {
@@ -147,20 +147,20 @@ header {
   }
   
   .column p {
-    font-size: 1rem;
+    font-size: 0.60rem;
     line-height: 1.6;
   }
   
   /* Memodifikasi gaya untuk bagian "Visi & Misi" */
   .column h3 {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
   
   .column p {
     margin: 10px 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
 
@@ -170,16 +170,18 @@ header {
   
 
   /* Kategori Produk */
+/* Kategori Produk */
 #katalog .two-column {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
-    gap: 30px; /* Jarak antar kartu */
-  }
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Reduced space between cards */
+}
+
   
   .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 30px;
+    padding-bottom:24px;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;

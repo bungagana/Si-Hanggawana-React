@@ -10,6 +10,7 @@ import KonsultanDetailPage from './components/ConsultanDetailPage';
 import PelatihanPage from './components/PelatihanPage'; 
 import OutingClassPage from './components/OutingClassPage'; // Import the new page
 
+
 function App() {
   return (
     <Router>

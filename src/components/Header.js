@@ -12,7 +12,7 @@ function Header() {
   return (
     <header>
       <div className="logo">
-        <img src={logo} alt="Logo" /> Hanggawana
+        <img src={logo} alt="Logo" /> Si Hanggawana
       </div>
       <nav>
         <ul>

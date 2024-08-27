@@ -9,14 +9,9 @@ const ConsultanPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const products = [
-    { id: 1, category: 'kambing', name: 'Konsultasi Peternakan Kambing', description: 'Konsultasi ahli tentang peternakan kambing.', image: 'https://via.placeholder.com/150' },
-    { id: 2, category: 'sayur', name: 'Konsultasi Sayur', description: 'Panduan lengkap untuk bertanam sayur.', image: 'https://via.placeholder.com/150' },
-    { id: 3, category: 'buah', name: 'Konsultasi Buah', description: 'Tips dan teknik untuk bertanam buah.', image: 'https://via.placeholder.com/150' },
-    { id: 4, category: 'kebun', name: 'Konsultasi Kebun dan Tanaman', description: 'Bantuan dalam perawatan kebun dan tanaman.', image: 'https://via.placeholder.com/150' },
-    { id: 5, category: 'hortikultura', name: 'Konsultasi Horticultura', description: 'Konsultasi untuk berbagai aspek hortikultura.', image: 'https://via.placeholder.com/150' },
-    { id: 6, category: 'sampah', name: 'Konsultasi Pengelolaan Sampah', description: 'Solusi dan teknik pengelolaan sampah.', image: 'https://via.placeholder.com/150' },
-    { id: 7, category: 'greenhouse', name: 'Konsultasi Greenhouse', description: 'Panduan dan tips untuk greenhouse.', image: 'https://via.placeholder.com/150' },
-    { id: 8, category: 'bisnisplab', name: 'Konsultasi Bisnis PLAB', description: 'Bantuan dalam mengelola bisnis PLAB.', image: 'https://via.placeholder.com/150' }
+    { id: 1, category: 'kambing', name: 'Konsultasi Peternakan Kambing', description: 'Konsultasi ahli tentang peternakan kambing.', image: 'https://cdn.pixabay.com/photo/2017/10/31/12/01/goat-2905055_1280.jpg' },
+    { id: 6, category: 'sampah', name: 'Konsultasi Pengelolaan Sampah', description: 'Solusi dan teknik pengelolaan sampah.', image: 'https://cdn.pixabay.com/photo/2017/04/29/11/52/wheelie-bin-2270582_1280.jpg' },
+
   ];
 
   const filteredProducts = products.filter(product =>
@@ -42,7 +37,7 @@ const ConsultanPage = () => {
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
           />
-          <select
+          {/* <select
             value={selectedCategory}
             onChange={e => setSelectedCategory(e.target.value)}
           >
@@ -50,26 +45,26 @@ const ConsultanPage = () => {
             <option value="buah">Buah</option>
             <option value="sayur">Sayur</option>
             <option value="tanamanpangan">Tanaman Pangan</option>
-          </select>
+          </select> */}
         </div>
         <div className="product-cards">
           {filteredProducts.length > 0 ? (
             filteredProducts.map(product => (
-              <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
+              // <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
                 <div className="product-card">
                   <img src={product.image} alt={product.name} />
                   <h3>{product.name}</h3>
                   <p>{product.description}</p>
                   <a href="#" className="order-button" onClick={(e) => handleOrderClick(e, product.id)}>Pesan</a>
                 </div>
-              </Link>
+              // </Link>
             ))
           ) : (
             <p>No products found</p>
           )}
         </div>
       </div>
-      <Footer />
+
     </>
   );
 };

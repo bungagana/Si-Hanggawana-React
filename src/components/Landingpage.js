@@ -35,7 +35,7 @@ function LandingPage() {
       </p>
     </div>
     <div className="column">
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video about Si Hanggawana" frameBorder="0" allowFullScreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/7yH03s-BJT0" title="Video about Si Hanggawana" frameBorder="0" allowFullScreen></iframe>
     </div>
   </div>
 </section>

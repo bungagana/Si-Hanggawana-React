@@ -1,5 +1,5 @@
 // components/OutingClassPage.js
-
+import Header from './Header';
 import React from 'react';
 import './css/OutingClassPage.css'; // Path to your CSS file
 
@@ -28,6 +28,7 @@ const OutingClassPage = () => {
 
   return (
     <>
+      <Header />
       <div className="outingclass-container">
         <h1 className="outingclass-title">Galeri Outing Class</h1>
         <div className="gallery">

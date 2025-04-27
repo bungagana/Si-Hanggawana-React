@@ -6,6 +6,9 @@ Repository ini adalah bagian dari proyek **Si-Hanggawana** yang dikembangkan men
 Dokumentasi ini menjelaskan **cara cloning dan menjalankan** proyek ini di lingkungan lokal Anda.
 
 ---
+![Tampilan Si-Hanggawana](./lp.jpeg)
+
+
 
 ## 🚀 Fitur
 
